@@ -1,6 +1,32 @@
-.services
+#services.services
     .container
-        .row
+        .row.service-desc
             .col.s12
                 h2 Our Services
                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        .row
+            .col.s12.m4
+                .card
+                    .card-image
+                        img(src=cdn + "/home/courier.png", alt="Courier")
+                    .card-content
+                        span.card-title Courier
+                        p Delivery of non perishable items in and around Dimapur
+            .col.s12.m4
+                .card
+                    .card-image
+                        img(src=cdn + "/home/taxes.png", alt="Taxes")
+                    .card-content
+                        span.card-title Taxes
+                        p Delivery of non perishable items in and around Dimapur
+            .col.s12.m4
+                .card
+                    .card-image
+                        img(src=cdn + "/home/photography.png", alt="Photography")
+                    .card-content
+                        span.card-title Photography
+                        p Delivery of non perishable items in and around Dimapur
+        .row.service-action
+            .col.s12
+                span More Services
+                a(href="tel:+915645333453").btn.waves-effect.waves-light Call Now

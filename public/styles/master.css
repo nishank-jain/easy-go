@@ -248,21 +248,120 @@ header .other .col {
 }
 
 .services {
-  text-align: center;
   padding: 60px 0;
 }
 
-.services h2 {
+.services .service-desc {
+  text-align: center;
+}
+
+.services .service-desc h2 {
   font-size: 39px;
   color: #071149;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.services p {
+.services .service-desc p {
   color: #071149;
   width: 50%;
   margin: auto;
   margin-bottom: 60px;
   font-weight: 600;
+}
+
+.services .card .card-content {
+  background-color: #071149;
+  color: #FFFFFF;
+}
+
+.services .card .card-content .card-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.services .service-action {
+  text-align: center;
+}
+
+.services .service-action span {
+  text-decoration: underline;
+  display: block;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.9px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.contact-us {
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us .contact-desc {
+  text-align: center;
+}
+
+.contact-us .contact-desc h2 {
+  font-size: 39px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact-us .contact-desc p {
+  color: #FFFFFF;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.contact-us .contact-desc h4 {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+.contact-us .contact-desc .message input, .contact-us .contact-desc .message textarea {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  border: none;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.contact-us .contact-desc .message form {
+  width: 50%;
+  margin: auto;
+}
+
+.contact-us .contact-desc .message form button {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.contact-us .connect {
+  text-align: center;
+}
+
+.contact-us .connect h4 {
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 27px;
+}
+
+.contact-us .connect .social {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+.contact-us .connect .social img {
+  width: 60px;
 }
