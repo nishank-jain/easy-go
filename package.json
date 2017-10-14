@@ -1,0 +1,26 @@
+{
+  "name": "easy-go",
+  "version": "1.0.0",
+  "description": "Easy Go Landing Page",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node ./bin/www",
+    "dev": "nodemon --exec node ./bin/www"
+  },
+  "author": "Nishank Jain",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.18.0",
+    "debug": "^3.0.0",
+    "express": "^4.15.4",
+    "express-device": "^0.4.2",
+    "method-override": "^2.3.9",
+    "node-sass-middleware": "^0.11.0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}

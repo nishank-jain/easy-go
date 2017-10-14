@@ -1,0 +1,12 @@
+extend ../layout
+block append head
+	title #{title}
+	meta(name="description" content="#{description}")
+	link(rel="canonical", href="//www.easygo.com")
+block content
+	main
+		include about-us
+		include why-us
+		include services
+block append js
+	include scripts

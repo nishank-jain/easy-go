@@ -1,0 +1,108 @@
+// Import the required mixins
+// @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import 'css3-mixins';
+
+// Global Styles
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// 	margin: 0;
+// 	padding: 0;
+// }
+
+// Colors
+$white: #FFFFFF;
+$primary: #2706a6;
+$link: #071149;
+$btn-bg: #90caf9;
+$btn-text: #0d1754;
+
+// General Font Sizes
+$esf: 10px;
+$sf: 12px;
+$rf: 14px;
+$lf: 16px;
+$elf: 18px;
+
+// Heading Font Sizes
+$h1: 45px;
+$h2: 39px;
+$h3: 33px;
+$h4: 27px;
+$h5: 21px;
+$h6: 15px;
+
+// Font Weights
+$light: 400;
+$regular: 500;
+$medium: 600;
+$bold: 700;
+$extra-bold: 800;
+
+@media only screen and (min-width: 993px) {
+	.container {
+		width: 85%;
+	}
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+	// font-family: 'Roboto';
+	font-family: 'Open Sans', sans-serif;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.row {
+	margin-bottom: 0;
+}
+
+.card {
+	margin: 1rem 0 1rem 0;
+}
+
+.logo {
+	text-align: center;
+	margin: 24px 0;
+	img {
+		vertical-align: middle;
+	}
+}
+
+p {
+	margin: 5px 0;
+}
+
+a {
+	color: $link;
+	text-transform: uppercase;
+}
+
+.btn {
+	background-color: $btn-bg;
+	border-radius: 3px;
+	height: 60px;
+	line-height: 60px;
+	color: $btn-text;
+	letter-spacing: 3px;
+	font-size: 30px;
+	font-weight: $medium;
+	&:hover {
+		background-color: #6abcff;
+	}
+}
