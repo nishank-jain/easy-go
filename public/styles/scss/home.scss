@@ -18,9 +18,13 @@
 		margin-top: -75px;
 	}
 	@media only screen and (max-width: 767px) {
-		margin-top: 20px;
+		margin-top: 0;
 		p {
 			width: auto;
+		}
+		img {
+			margin-top: 0;
+			width: 100%;
 		}
 	}
 }
@@ -74,6 +78,37 @@
 			margin-top: 0;
 		}
 	}
+	@media only screen and (max-width: 767px) {
+		padding: 20px;
+		.benefit-desc  {
+			p {
+				width: auto;
+				margin-bottom: 30px;
+			}
+		}
+		.benefits {
+			.col {
+				margin: 15px 0;
+				padding: 0;
+			}
+		}
+		.icon {
+			vertical-align: top;
+			img {
+				max-height: 30px;
+			}
+		}
+		.desc {
+			vertical-align: top;
+			padding-right: 0;
+			h6 {
+				margin-top: 0;
+			}
+			p {
+				font-size: $sf;
+			}
+		}
+	}
 }
 
 .services {
@@ -116,6 +151,20 @@
 		}
 		text-align: center;
 	}
+	@media only screen and (max-width: 767px) {
+		padding: 20px 0;
+		.service-desc {
+			p {
+				width: auto;
+				margin-bottom: 30px;
+			}
+		}
+		.card {
+			.card-content {
+				font-size: $sf;
+			}
+		}
+	}
 }
 
 .contact-us {
@@ -148,6 +197,7 @@
 				border: none;
 				padding: 10px 15px;
 				box-sizing: border-box;
+				height: auto;
 			}
 			form {
 				width: 50%;
@@ -172,6 +222,35 @@
 			margin: 10px 20px;
 			img {
 				width: 60px;
+			}
+		}
+	}
+	@media only screen and (max-width: 767px) {
+		padding: 30px 0;
+		.contact-desc {
+			p {
+				width: auto;
+				margin-bottom: 0;
+			}
+			h4 {
+				margin-top: 0;
+			}
+			.message {
+				form {
+					width: auto;
+				}
+			}
+		}
+		img {
+			margin-top: 0;
+			width: 100%;
+		}
+		.connect {
+			.social {
+				margin: 10px;
+				img {
+					width: 30px;
+				}
 			}
 		}
 	}
