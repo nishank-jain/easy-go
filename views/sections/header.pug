@@ -1,33 +1,34 @@
 header
 	.container
 		.row
-			.logo.col.m3
+			.logo.col.m3.s12
 				img(src=cdn + "/common/header/logo.png")
 			.other.col.m9
 				.row
-					.col.s12.right-align
-						.details
-							.call
-								.icon
-									img(src=cdn + "/common/header/call.png")
-								.desc
-									p Call us anytime
-									p +91 56453 33453
-						.details
-							.work
-								.icon
-									img(src=cdn + "/common/header/work.png")
-								.desc
-									p Working Hours
-									p 8:00 AM - 6:00 PM
-						.details
-							.email
-								.icon
-									img(src=cdn + "/common/header/email.png")
-								.desc
-									p Email us
-									p hello@easygoservices.com
 					.col.s12
+						.details-overview.row
+							.details.col.s12.m3.offset-m3
+								.call.row
+									.icon.col.s3
+										img(src=cdn + "/common/header/call.png")
+									.desc.col.s9
+										p Call us anytime
+										p +91 56453 33453
+							.details.col.s12.m3
+								.work.row
+									.icon.col.s3
+										img(src=cdn + "/common/header/work.png")
+									.desc.col.s9
+										p Working Hours
+										p 8:00 AM - 6:00 PM
+							.details.col.s12.m3
+								.email.row
+									.icon.col.s3
+										img(src=cdn + "/common/header/email.png")
+									.desc.col.s9
+										p Email us
+										p hello@easygoservices.com
+					.col.s12.nav-container.hide-on-small-only
 						.nav
 							ul
 								li

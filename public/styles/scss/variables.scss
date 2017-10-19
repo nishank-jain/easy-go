@@ -16,6 +16,7 @@
 
 // Colors
 $white: #FFFFFF;
+$black: #000000;
 $primary: #2706a6;
 $link: #071149;
 $btn-bg: #90caf9;
@@ -36,12 +37,59 @@ $h4: 27px;
 $h5: 21px;
 $h6: 15px;
 
+$h1s: 30px;
+$h2s: 26px;
+$h3s: 22px;
+$h4s: 18px;
+$h5s: 14px;
+$h6s: 10px;
+
 // Font Weights
 $light: 400;
 $regular: 500;
 $medium: 600;
 $bold: 700;
 $extra-bold: 800;
+
+h1 {
+	font-size: $h1;
+}
+h2 {
+	font-size: $h2;
+}
+h3 {
+	font-size: $h3;
+}
+h4 {
+	font-size: $h4;
+}
+h5 {
+	font-size: $h5;
+}
+h6 {
+	font-size: $h6;
+}
+
+@media only screen and (max-width: 767px) {
+	h1 {
+		font-size: $h1s;
+	}
+	h2 {
+		font-size: $h2s;
+	}
+	h3 {
+		font-size: $h3s;
+	}
+	h4 {
+		font-size: $h4s;
+	}
+	h5 {
+		font-size: $h5s;
+	}
+	h6 {
+		font-size: $h6s;
+	}
+}
 
 @media only screen and (min-width: 993px) {
 	.container {
@@ -82,6 +130,12 @@ html, body {
 	img {
 		vertical-align: middle;
 	}
+	@media only screen and (max-width: 767px) {
+		text-align: center;
+		img {
+			height: 35px;
+		}
+	}
 }
 
 p {
@@ -104,5 +158,11 @@ a {
 	font-weight: $medium;
 	&:hover {
 		background-color: #6abcff;
+	}
+	@media only screen and (max-width: 767px) {
+		height: 30px;
+		line-height: 30px;
+		letter-spacing: 1.2px;
+		font-size: 18px;
 	}
 }

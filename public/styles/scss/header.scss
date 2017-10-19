@@ -2,25 +2,25 @@ header {
 	background-color: $primary;
 	.details {
 		display: inline-block;
-		text-align: center;
-		padding: 10px 0;
-		> div {
-			border-right: 1px solid $white;
-			padding: 0 15px;
+		text-align: left;
+		margin: 10px 0;
+		border-right: 1px solid $white;
+		&:last-child {
+			border-right: none;
 		}
 		.email {
 			border: none;
 		}
 		.icon {
-			display: inline-block;
 			vertical-align: middle;
-			margin-right: 10px;
+			margin: 7px 0;
+			padding-right: 0;
+			text-align: center;
 			img {
 				width: 30px;
 			}
 		}
 		.desc {
-			display: inline-block;
 			vertical-align: middle;
 			color: $white;
 			text-align: left;
@@ -28,7 +28,7 @@ header {
 				text-transform: uppercase;
 				font-size: $rf;
 				font-weight: $bold;
-				margin-bottom: 0;
+				margin: 2px 0;
 				letter-spacing: 1.3px;
 			}
 			p:nth-child(2) {
@@ -41,6 +41,7 @@ header {
 	.nav {
 		background-color: $white;
 		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
 		ul {
 			margin: 0;
 			padding: 10px 0;
@@ -62,8 +63,33 @@ header {
 	}
 	.other {
 		padding: 0 !important;
-		.col {
-			padding: 0;
+		.details-overview {
+			text-align: right;
+			@media only screen and (max-width: 767px) {
+				text-align: center;
+				background-color: $white;
+				.details {
+					margin: 5px 0;
+					> div {
+						border: none;
+					}
+				}
+				.icon {
+					filter: invert(100%);
+					text-align: right;
+					img {
+						width: 20px;
+					}
+				}
+				.desc {
+					color: $black;
+				}
+			}
 		}
+		// .nav-container {
+		// 	@media only screen and (max-width: 767px) {
+		// 		display: none;
+		// 	}
+		// }
 	}
 }
