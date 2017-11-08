@@ -1,24 +1,36 @@
 #contact-us.contact-us(style="background-image: url(" + cdn + "/home/contact-us-bg.png" + ")")
     .container
         .row.contact-desc
-            .col.s12
+            .col.s12.contact-details
                 h2 Contact Us
                 p Getting experience professionals to get your work done has never been easier. Call EasyGO Services today!
-            .col.s12.call-details
-                h2 Call - +91 67534 45645
-            .col.s12.message
-                h4 Or drop us a message
-                form.row(action="#")
-                    .col.s12.m6
-                        input(type="text" placeholder="Full Name")
-                    .col.s12.m6
-                        input(type="number" placeholder="Mobile Number")
-                    .col.s12
-                        input(type="email" placeholder="Email ID")
-                    .col.s12
-                        textarea(name="request" rows="5" placeholder="Your query or request")
-                    .col.s12
-                        button.btn.waves-effect.waves-light(type="submit") Submit
+            //- .col.s12.call-details
+            //-     h2 Call - +91 67534 45645
+            //- .col.s12.message
+            //-     h4 Or drop us a message
+            //-     form.row(action="#")
+            //-         .col.s12.m6
+            //-             input(type="text" placeholder="Full Name")
+            //-         .col.s12.m6
+            //-             input(type="number" placeholder="Mobile Number")
+            //-         .col.s12
+            //-             input(type="email" placeholder="Email ID")
+            //-         .col.s12
+            //-             textarea(name="request" rows="5" placeholder="Your query or request")
+            //-         .col.s12
+            //-             button.btn.waves-effect.waves-light(type="submit") Submit
+            .col.s12.m4.offset-m2.call-us
+                .call-icon
+                    img(src=cdn + "/home/phone-call.png", alt="Call us")
+                .call-number
+                    p Call us at:
+                    p +91 67534 45645
+            .col.s12.m4.email-us
+                .email-icon
+                    img(src=cdn + "/home/email.png", alt="Email us")
+                .email-id
+                    p Mail us at:
+                    p hello@easygosevices.com
         .row.connect
             .col.s12
                 h4 Connect with us on
@@ -31,3 +43,9 @@
                 .whatsapp.social
                     a(href="#whatsapp")
                         img(src=cdn + "/common/whatsapp.png", alt="WhatsApp")
+        .row.company-details
+            .col.s12
+                .company-name
+                    p EasyGO Services
+                .company-address
+                    p 2nd Floor, Khakus Building, Behind Police Booth, near Foot Bridge, Dimapur, Nagaland - 797112 
