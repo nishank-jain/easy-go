@@ -140,6 +140,13 @@ a {
   }
 }
 
+.button-collapse {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #FFFFFF;
+}
+
 header {
   background-color: #2706a6;
 }
@@ -394,6 +401,17 @@ header .other .details-overview {
   margin: auto;
   margin-bottom: 60px;
   font-weight: 600;
+}
+
+.services .services-fold {
+  max-height: 0px;
+  overflow: hidden;
+  -webkit-transition: max-height ease 0.5s;
+  -khtml-transition: max-height ease 0.5s;
+  -moz-transition: max-height ease 0.5s;
+  -ms-transition: max-height ease 0.5s;
+  -o-transition: max-height ease 0.5s;
+  transition: max-height ease 0.5s;
 }
 
 .services .card .card-content {
