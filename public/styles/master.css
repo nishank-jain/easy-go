@@ -199,8 +199,6 @@ header .details .desc p:nth-child(2) {
 
 header .nav {
   background-color: #FFFFFF;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
 }
 
 header .nav ul {
@@ -325,7 +323,7 @@ header .other .details-overview {
   vertical-align: middle;
   width: 15%;
   text-align: right;
-  display: inline-block;
+  float: left;
 }
 
 .why-us .icon img {
@@ -338,7 +336,7 @@ header .other .details-overview {
   text-align: left;
   width: 85%;
   padding: 0 15px;
-  display: inline-block;
+  float: left;
 }
 
 .why-us .desc h6 {
@@ -422,6 +420,10 @@ header .other .details-overview {
 .services .card .card-content .card-title {
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.services .card .card-content p {
+  font-size: 12px;
 }
 
 .services .service-action {
@@ -593,9 +595,15 @@ header .other .details-overview {
     margin-bottom: 0;
     margin-top: 0;
   }
+  .contact-us .contact-desc .call-us .call-icon img {
+    height: 50px;
+  }
   .contact-us .contact-desc .email-us {
     margin-bottom: 0;
     margin-top: 0;
+  }
+  .contact-us .contact-desc .email-us .email-icon img {
+    height: 50px;
   }
   .contact-us .contact-desc h4 {
     margin-top: 0;
